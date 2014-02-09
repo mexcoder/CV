@@ -1,0 +1,86 @@
+%
+\documentclass[letterpaper,12pt]{article}
+%\documentclass[letterpaper,12pt]{moderncv}
+
+\usepackage{currvita}         % Cargamos el módulo para Curriculum Vitae
+\usepackage[spanish]{babel}   % Idioma español
+\usepackage[utf8]{inputenc}   % Estos archivos de texto son UTF-8. En Gentoo uso utf-8. En Debian utf8
+\usepackage{fullpage}         % Disminuye los márgenes, cabe más en cada página
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\title{Curriculum Vitae}
+\author{Juan Antonio Orozco Bianchi}
+\date{\today}
+
+\topmargin  0cm   % Para reducir el margen superior e inferior
+\textheight 23cm  % Alto hoja tamaño carta 27.81cm
+
+\begin{document}
+
+\setlength{\cvlabelwidth}{40mm}  % Modifica el espacio para las etiquetas de los listados
+
+\begin{cv}{Curriculum Vitae}
+
+\begin{cvlist}{Datos personales}
+        \item[Nombre completo] Juan Antonio Orozco Bianchi
+        \item[Fecha de nacimiento] 31 de Enero de 1993
+        \item[Domicilio] Calzada central 1243\\
+                Ciudad Granja\\
+                Zapopan,Jalisco, Mexico
+       % \item[Teléfono particular] (000) 000 00 00
+        \item[Teléfono celular] (33) 1718 69 20
+        \item[Correo electrónico] iam@mexcoder.com
+        \item[Sitio web] http://mexcoder.com
+\end{cvlist}
+
+\begin{cvlist}{Áreas inmediatas de desempeño}
+        \item Puesto o labores.
+        \item Puesto o labores.
+        \item Puesto o labores.
+\end{cvlist}
+
+\begin{cvlist}{Habilidades}
+        \item Programacion nivel avanzado en \CPP, Java, PHP, JavaScript.
+        \item manejo de Mootools, ZendFramework y AJAX
+        \item Diseño de Bases de Datos en 3FN.
+        \item \LaTeX{} basico.
+\end{cvlist}
+
+\begin{cvlist}{Experiencia}
+
+        \item[2011 a 2012] \textbf{Suibit}\\
+                \emph{programador}\\
+                Los logros y funciones más importantes.
+
+        \item[2011 a 2011] \textbf{Adkin}\\
+                \emph{Administrador de sistemas}\\
+                Los logros y funciones más importantes.
+                
+         \item[2011 a 2011] \textbf{Adkin}\\
+                \emph{Programador Web}\\
+                Los logros y funciones más importantes.
+
+\end{cvlist}
+
+\begin{cvlist}{Formación}
+
+        \item[2008 a 2013] \textbf{Centro de Enseñanza Tecnica Indutrial}\\
+                \emph{Tecnologo en Informatica y Computacion}\\
+                Especialidad en Programacion.
+
+
+\end{cvlist}
+
+\begin{cvlist}{Otros datos}
+        \item Certificado en HTML5 desde enero 2013.
+        \item bronce en omijal 2010.
+        \item plata en omijal 2011.
+        \item bronce en omijal 2012.
+\end{cvlist}
+
+\end{cv}
+
+\end{document}
