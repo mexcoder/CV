@@ -215,7 +215,11 @@ pip-log.txt
 .mr.developer.cfg
 
 #latex
-.out
-.aux
-.synctex.gz(busy)
-.log
+*.out
+*.aux
+*.synctex.gz(busy)
+*.synctex.gz
+*.log
+*.toc
+*.lof
+*.lot
