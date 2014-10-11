@@ -1,13 +1,13 @@
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvtheme[green]{casual}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{banking}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 %\moderncvtheme[green]{classic}                % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
-%\usepackage[spanish,es-lcroman]{babel}   % Idioma español
+\usepackage[spanish,es-lcroman,es-notilde]{babel}   % Idioma español
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -35,4 +35,6 @@
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize \textbf{++}}}
 
-\input{CV_content}
+\providecommand{\lang}{es}
+
+\input{CV_content_\lang}

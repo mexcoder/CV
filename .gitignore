@@ -223,3 +223,6 @@ pip-log.txt
 *.toc
 *.lof
 *.lot
+auxFiles/
+out/
+*.pdf
