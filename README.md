@@ -3,7 +3,8 @@
 this is the Latext source code of my resumee
 
 ## Dependencies
-* Latext
+* Latex
+* Latex's moderncv package
 * If running in a *nix like system you may need to make the build file executable by running `chmod 755 build.sh` on the terminal
 
 
@@ -18,7 +19,8 @@ this is the Latext source code of my resumee
 Este repositorio contiene el codigo Latex para compilar mi CV
 
 ## Dependencias
-* Latext
+* Latex
+* el paquete moderncv de latex
 * en los sistemas tipo *nix hay que dar permisos de escritura al ejecutable con el comando `chmod 755 build.sh`
 
 ## Compilando
