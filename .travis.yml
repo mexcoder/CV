@@ -7,6 +7,8 @@ before_install:
 script:
 - chmod +x build.sh
 - ./build.sh
+- ls
+- ls out
 - ls out/es
 - ls out/en
 - cp out/es/cv_classic_es.pdf out/cv_es.pdf
