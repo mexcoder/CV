@@ -7,17 +7,17 @@ before_install:
 script:
 - chmod +x build.sh
 - ./build.sh
-- ls out
-- ls out/langes
-- ls out/langen
+- cp out/lang/es/cv_clasic_es.pdf /out/cv_es.pdf
+- cp out/lang/en/cv_clasic_en.pdf /out/cv_en.pdf
+
 
 deploy:
   provider: releases
   api_key:
     secure: gsvHYvCWg1jTH5PcuTNCioln8fKTqtKXgnL8GSrskcW13yncmEcPzDQTIgb4VJgm+sfmgTp5F3Xyax+8IqCfutl/rr8vZXO5fNzNI2IIHR5SJK0Bo1eQfm/yos1vakP3Fs1kTiMTB1/rollveHCx0hB2uhL0AmlWt9vEw7GN5A20xb+CuE65Al1/s6Uuj33t8Oj4+0u8Scerzx0zIYlZol8lbyGSv18gzs+PYUekxyBZypUgTaRDMnFH2D1jRnXTTW4kRfhtS+vsZXL8Kz2O3lgtgvJ/Rsh87bIvbpGL6xGGKfpNxZVMUXdVHQ3SHUllI4ET/en761q5jz8R4yf6w3vsEzcyYtqs7eAw6+tYV2ifwIPVBzANl2REM3WEiglulD59nEq1XOUjDMIlEez4jQ/bCuI2xKQCo7JFFFISJho4e7o21OjCB/agkuRKNFI0Yai2cd50cKS2IX7v2HGCiASubD4miG/WBuzQdoWw/XdHVZuUCCnWs0lMD8J1YcAK1I9b5cEr7u0IuG+ybI1x46IPeL9z0Ir2dDPJfs4OsOXnLOi8jGq6Cu3K1reQAb3wsgi080uzrLRv/HheiyxA/gbuh4QJfiMHmPIaniaL5+zA8XJrJdmqMfT+k8Fh9aavAWSASGg6ErY0iA/PEKk+ADqJUeiK3GED8q0Bug8BJ94=
   file: 
-  - _build/your_file_1.pdf
-  - _build/your_file_2.pdf
+  - out/cv_es.pdf
+  - out/cv_en.pdf
   skip_cleanup: true
   on:
     tags: true
