@@ -7,8 +7,8 @@ before_install:
 script:
 - chmod +x build.sh
 - ./build.sh
-- cp out/lang/es/cv_clasic_es.pdf out/cv_es.pdf
-- cp out/lang/en/cv_clasic_en.pdf out/cv_en.pdf
+- cp out/lang/es/cv_classic_es.pdf out/cv_es.pdf
+- cp out/lang/en/cv_classic_en.pdf out/cv_en.pdf
 
 
 deploy:
