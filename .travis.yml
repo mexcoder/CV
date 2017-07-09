@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-base texlive-binaries texlive-latex-recommended latex-xcolor pgf
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-base texlive-binaries texlive-latex-recommended latex-xcolor texlive-lang-spanish pgf
 - wget 'http://mirror.ctan.org/macros/latex/contrib/moderncv.zip'
 - unzip moderncv.zip
 script:
