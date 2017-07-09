@@ -25,7 +25,7 @@ for l in $lang
 do
     for t in $theme
 	do
-      pdflatex "\def\lang{$l}\input cv_$t.tex" -aux-directory=auxFiles -output-directory=out/$l --jobname=cv_$t\_$l
+      pdflatex "\def\lang{$l}\input cv_$t.tex" -aux-directory=auxFiles -output-directory=out/$l --jobname=cv_$t\_$l -halt-on-error
 	done
 done
 

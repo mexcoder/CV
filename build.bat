@@ -14,7 +14,7 @@ FOR %%c in (%lang%) do (
 
 FOR %%b in (%lang%) DO (
     FOR %%a in (%theme%) DO (
-      pdflatex "\def\lang{%%b}\input cv_%%a.tex" -aux-directory=auxFiles -output-directory=out/%%b --jobname=cv_%%a_%%b
+      pdflatex "\def\lang{%%b}\input cv_%%a.tex" -aux-directory=auxFiles -output-directory=out/%%b --jobname=cv_%%a_%%b -halt-on-error
     )
 )
 
